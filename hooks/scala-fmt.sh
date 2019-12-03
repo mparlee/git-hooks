@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 
-scalafmt "$@"
+scalafmt --non-interactive "$@"
 
