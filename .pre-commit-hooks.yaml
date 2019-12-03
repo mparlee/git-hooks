@@ -1,0 +1,16 @@
+---
+
+- id: scala-fmt
+  name: scalafmt
+  description: Runs `scalafmt` and asserts no changes are needed.
+  entry: hooks/scala-fmt.sh
+  language: script
+  files: \.scala$
+
+- id: ktlint
+  name: ktlint
+  description: Runs `ktint --fix` and asserts no changes are needed.
+  entry: hooks/ktlint.sh
+  language: script
+  files: \.kt$
+
